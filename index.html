@@ -16,7 +16,7 @@
     <!--TITLE-->
   <title>Around the U.S.</title>
     <!--ESTILOS-->
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="/pages/index.css">
     <!--FUENTES-->
     <link rel="preconnect" href="https://rsms.me/">
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
@@ -26,28 +26,99 @@
     
  <header class="header">
     <!-- Logo/título -->
-     <img src="/Images/Header.png" class="header__title">
-     <img src="/Images/header-Line.png" class="header__line">
+<img class="header__title" src="/Images/Vector.png">
+<img class="header__line" src="/Images/Line.png">
   </header>
   <main class="content">
     <!-- Sección de perfil y galería -->
   <section class="profile">
     <img src="/Images/profile-pic.jpg" class="profile__pic">
-    <img src="/Images/Profile-Info.png" class="profile__info">
+    <div class="profile__name">
+    <h2 class="profile__info">Jaques Costeau</h2>
+    <img src="/Images/Edit-Button.png" class="profile__edit-button" id="edit-button">
+    </div>
+    <p class="profile__sub">Explorer</p>
+    
     <img src="/Images/Add-Button.png" class="profile__add-button">
   </section>
+  <!-- POPUP-->
+   <div class="popup" id="popup">
+
+    <div class="popup__container">
+        <button class="popup__close" id="close-button">
+        <img src="/Images/Close-Icon.svg" alt="Cerrar" class="popup__close-icon">
+       </button>
+      <h4 class="popup__text">Editar Perfil</h4>
+      <form class="popup__form">
+        <input type="text" name="name" placeholder="Nombre" class="popup__input">
+        <textarea name="about" placeholder="Acerca de mí" class="popup__textarea"></textarea>
+        <button type="submit" class="popup__submit">Guardar</button></form>
+      
+    </div>
+
+   </div>
   <section class="elements">
-    <img src="/Images/Element-yosemite.png" class="elements__element">
-    <img src="/Images/Element-Louise.png" class="elements__element">
-    <img src="/Images/Element-mountains.png" class="elements__element">
-    <img src="/Images/Element-late.png" class="elements__element">
-    <img src="/Images/Element-vanois.png" class="elements__element">
-    <img src="/Images/Element-lake.png" class="elements__element">
+     <div class="elements__element"> 
+     <img class="elements__element-image" src="./Images/yosemite.jpg" alt="Yosemite">
+      <div class="elements__element-info">
+       <h3 class="elements__element-title">Valle de Yosemite</h3>
+       <button class="elements__element-button elements__element-button_active" type="button">
+        <img src="./Images/Vector-like.svg" alt="Me gusta">
+       </button> 
+      </div>
+     </div>
+          <div class="elements__element"> 
+     <img class="elements__element-image" src="./Images/louise.png" alt="Lago Louise">
+      <div class="elements__element-info">
+       <h3 class="elements__element-title">Lago Louise</h3>
+       <button class="elements__element-button" type="button">
+        <img src="/Images/Vector-like.svg" alt="Me gusta">
+       </button> 
+      </div>
+     </div>
+          <div class="elements__element"> 
+     <img class="elements__element-image" src="./Images/bald-mountains.png" alt="Bald Mountains">
+      <div class="elements__element-info">
+       <h3 class="elements__element-title">Bald Mountains</h3>
+       <button class="elements__element-button" type="button">
+        <img src="/Images/Vector-like.svg" alt="Me gusta">
+       </button> 
+      </div>
+     </div>
+          <div class="elements__element"> 
+     <img class="elements__element-image" src="./Images/latemar.png" alt="Latemar">
+      <div class="elements__element-info">
+       <h3 class="elements__element-title">Lugar pedorro</h3>
+       <button class="elements__element-button" type="button">
+        <img src="/Images/Vector-like.svg" alt="Me gusta">
+       </button> 
+      </div>
+     </div>
+          <div class="elements__element"> 
+     <img class="elements__element-image" src="./Images/Vanois.png" alt="Lago Vanois">
+      <div class="elements__element-info">
+       <h3 class="elements__element-title">Vanois National Forest</h3>
+       <button class="elements__element-button" type="button">
+        <img src="/Images/Vector-like.svg" alt="Me gusta">
+       </button> 
+      </div>
+     </div>
+          <div class="elements__element"> 
+     <img class="elements__element-image" src="./Images/braies.png" alt="Lago Vanois">
+      <div class="elements__element-info">
+       <h3 class="elements__element-title">Lugar pedorro</h3>
+       <button class="elements__element-button" type="button">
+        <img src="/Images/Vector-like.svg" alt="Me gusta">
+       </button> 
+      </div>
+     </div>
+     
   </section>
   </main>
  <footer class="footer">
     <p class="footer__copyright">© 2024 Around The U.S.</p>
  </footer>
  </div>
+ <script src="scripts/script.js"></script>
 </body>
 </html>
