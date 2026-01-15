@@ -1,4 +1,4 @@
-// VARIABLES
+// VARIABLES para seleccionar los elementos de acuerdo a su id
 let editButton = document.querySelector("#edit-button");
 let closeButton = document.querySelector("#close-button");
 let popUp = document.querySelector("#popup");
