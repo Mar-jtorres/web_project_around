@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--SEO-->
+    <meta
+      name="description"
+      content="Around Mexico"
+    />
+    <meta
+      name="keywords"
+      content="viajes, paises, lugares, origen"
+    />
+    <meta name="author" content="Marjtorres" />
+    <!--TITLE-->
+  <title>Around CDMX</title>
+    <!--ESTILOS-->
+    <link rel="stylesheet" href="/pages/index.css">
+    <!--FUENTES-->
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+</head>
+<body>
+ <div class="page">
+    
+ <header class="header">
+    <!-- Logo/título -->
+<img class="header__title" src="/Images/Around.png">
+<img class="header__line" src="/Images/Line.png">
+  </header>
+  <main class="content">
+    <!-- Sección de perfil y galería -->
+  <section class="profile">
+    <img src="/Images/profile-maria.jpeg" class="profile__pic">
+    <div class="profile__name">
+    <h2 class="profile__info">Maria Torres</h2>
+    <img src="/Images/Edit-Button.png" class="profile__edit-button" id="edit-button">
+    </div>
+    <p class="profile__sub">Developer, Ethical Hacker</p>
+    
+    <img src="/Images/Add-Button.png" class="profile__add-button">
+  </section>
+  <!-- POPUP-->
+   <div class="popup" id="popup">
+
+    <div class="popup__container">
+        <button class="popup__close" id="close-button">
+        <img src="/Images/Close-Icon.svg" alt="Cerrar" class="popup__close-icon">
+       </button>
+      <h4 class="popup__text">Editar Perfil</h4>
+      <form class="popup__form">
+        <input type="text" name="name" placeholder="Nombre" class="popup__input">
+        <textarea name="about" placeholder="Acerca de mí" class="popup__textarea"></textarea>
+        <button type="submit" class="popup__submit">Guardar</button></form>
+      
+    </div>
+
+   </div>
+  <section class="elements">
+     <div class="elements__element"> 
+     <img class="elements__element-image" src="./Images/santafe.webp" alt="Personas relajandose en un parque junto a los edificios">
+      <div class="elements__element-info">
+       <h3 class="elements__element-title">Santa Fe</h3>
+       <button class="elements__element-button elements__element-button_active" type="button">
+        <img src="./Images/Vector-like.svg" alt="Me gusta">
+       </button> 
+      </div>
+     </div>
+          <div class="elements__element"> 
+     <img class="elements__element-image" src="./Images/desierto-de-los-leones.jpg" alt="Ruinas de un exconvento Desierto de los Leones">
+      <div class="elements__element-info">
+       <h3 class="elements__element-title">Cuajimalpa</h3>
+       <button class="elements__element-button" type="button">
+        <img src="/Images/Vector-like.svg" alt="Me gusta">
+       </button> 
+      </div>
+     </div>
+          <div class="elements__element"> 
+     <img class="elements__element-image" src="./Images/marquesa.jpg" alt="Bald Mountains">
+      <div class="elements__element-info">
+       <h3 class="elements__element-title">Marquesa</h3>
+       <button class="elements__element-button" type="button">
+        <img src="/Images/Vector-like.svg" alt="Me gusta">
+       </button> 
+      </div>
+     </div>
+          <div class="elements__element"> 
+     <img class="elements__element-image" src="./Images/tacubaya.jpg" alt="Estacion de metro Tacubaya">
+      <div class="elements__element-info">
+       <h3 class="elements__element-title">Tacubaya</h3>
+       <button class="elements__element-button" type="button">
+        <img src="/Images/Vector-like.svg" alt="Me gusta">
+       </button> 
+      </div>
+     </div>
+          <div class="elements__element"> 
+     <img class="elements__element-image" src="./Images/reformanuevo.jpg" alt="Avenida reforma cdmx">
+      <div class="elements__element-info">
+       <h3 class="elements__element-title">Reforma</h3>
+       <button class="elements__element-button" type="button">
+        <img src="/Images/Vector-like.svg" alt="Me gusta">
+       </button> 
+      </div>
+     </div>
+          <div class="elements__element"> 
+     <img class="elements__element-image" src="./Images/chapu.jpg" alt="Lago Vanois">
+      <div class="elements__element-info">
+       <h3 class="elements__element-title">Chapultepec</h3>
+       <button class="elements__element-button" type="button">
+        <img src="/Images/Vector-like.svg" alt="Me gusta">
+       </button> 
+      </div>
+     </div>
+     
+  </section>
+  </main>
+ <footer class="footer">
+    <p class="footer__copyright">© 2026 Around CDMX.</p>
+ </footer>
+ </div>
+ <script src="scripts/script.js"></script>
+</body>
+</html>

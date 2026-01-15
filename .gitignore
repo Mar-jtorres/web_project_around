@@ -1,0 +1,30 @@
+# Archivos del sistema
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Archivos de editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Archivos temporales
+*.tmp
+*.temp
+*.bak
+
+# Logs
+*.log
+npm-debug.log*
+
+# Dependencias (si usas Node.js más adelante)
+node_modules/
+
+# Archivos de configuración local
+.env
