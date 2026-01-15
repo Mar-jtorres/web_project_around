@@ -1,0 +1,33 @@
+.header{
+max-width: 880px;
+ margin: 0 auto;
+ 
+}
+.header__title{
+ width: 173px;
+ padding-top: 2em;
+ 
+}
+
+.header__line{
+color: white;
+width: 880px;
+height: 2px;
+} 
+
+@media screen and (max-width: 320px){
+    .header{
+     width: 100vw;
+     
+    }
+    .header__title{
+     padding-left: 2em;
+     width: 126px;
+
+    }
+   
+    .header__line{
+    width: 100vw;
+   
+    }
+}

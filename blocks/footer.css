@@ -1,0 +1,19 @@
+.footer{
+    margin: 0 auto;
+    max-width: 880px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}   
+.footer__copyright{
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    color: gray;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+/* === MEDIA QUERIES === */
+@media screen and (max-width: 320px){
+      
+    .footer {
+        padding-left: 20px;
+    }
+}
