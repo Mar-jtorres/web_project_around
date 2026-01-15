@@ -4,7 +4,16 @@ body {
 
 .page{
 max-width: 100vw;
-background-color: black;
+background-color: #6b7888;
+  background:
+    linear-gradient(
+      rgba(30, 35, 41, 0.85),
+      rgba(30, 35, 41, 0.85)
+    ),
+
+ url(../Images/pattrn.png);
+background-position: center;
+background-repeat: repeat;
 margin: 0 auto;
 align-content: center;
 color: white;
