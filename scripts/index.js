@@ -1,3 +1,32 @@
+//Datos iniciales
+const initialCards = [
+  {
+    name: "Santa Fe",
+    link: "./Images/santafe.webp"
+  },
+  {
+    name: "Cuajimalpa",
+    link: "./Images/desierto-de-los-leones.jpg"
+  },
+  {
+    name: "Marquesa",
+    link: "./Images/marquesa.jpg"
+  },
+  {
+    name: "Tacubaya",
+    link: "./Images/tacubaya.jpg"
+  },
+  {
+    name: "Reforma",
+    link: "./Images/reformanuevo.jpg"
+  },
+  {
+    name: "Chapultepec",
+    link: "./Images/chapu.jpg"
+  }
+];
+
+
 // VARIABLES para seleccionar los elementos de acuerdo a su id
 let editButton = document.querySelector("#edit-button");
 let closeButton = document.querySelector("#close-button");
