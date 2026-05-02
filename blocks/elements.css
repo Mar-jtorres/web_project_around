@@ -7,6 +7,7 @@
     
 }
 .elements__element{
+    position: relative;
     width: 282px;
     height: 361px;
     object-fit: cover;
@@ -35,7 +36,22 @@
     border: none;
     cursor: pointer;
 }
-
+.elements__element-button_active {
+  /* estilos para cuando está "liked" */
+}
+.elements__element-button-delete{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    width: 18px;
+    height: 19px;
+}
+.elements__element-button-delete:hover {
+    opacity: 0.6;
+}
 /* === MEDIA QUERIES === */
 @media screen and (max-width: 320px){
     .elements{

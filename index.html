@@ -40,9 +40,9 @@
     </div>
     <p class="profile__sub">Developer, Ethical Hacker</p>
     
-    <img src="./Images/Add-Button.png" class="profile__add-button">
+    <img src="./Images/Add-Button.png" class="profile__add-button" id="add-button">
   </section>
-  <!-- POPUP-->
+  <!-- POPUP EDITAR PERFIL-->
    <div class="popup" id="popup">
 
     <div class="popup__container">
@@ -56,10 +56,18 @@
         <button type="submit" class="popup__submit">Guardar</button></form>
       
     </div>
-
+   
+   </div>
+   <!-- POPUP IMAGEN GALERIA-->
+   <div class="popup popup_type_image" id="popup_type_image">
+    <div class="popup__container popup__container_type_image">
+    <button class="popup__close-button" type="button"><img src="./Images/Close-Icon.svg" alt="Cerrar" class="popup__close-icon"></button>
+    <img class="popup__image" src="" alt="">
+    <h2 class="popup__title"></h2>
+    </div>
    </div>
   <section class="elements">
-     <div class="elements__element"> 
+   <!-- <div class="elements__element"> 
      <img class="elements__element-image" src="./Images/santafe.webp" alt="Personas relajandose en un parque junto a los edificios">
       <div class="elements__element-info">
        <h3 class="elements__element-title">Santa Fe</h3>
@@ -78,7 +86,7 @@
       </div>
      </div>
           <div class="elements__element"> 
-     <img class="elements__element-image" src="./Images/marquesa.jpg" alt="Bald Mountains">
+     <img class="elements__element-image" src="./Images/marquesa.jpg" alt="Marquesa EdoMex">
       <div class="elements__element-info">
        <h3 class="elements__element-title">Marquesa</h3>
        <button class="elements__element-button" type="button">
@@ -112,7 +120,7 @@
         <img src="./Images/Vector-like.svg" alt="Me gusta">
        </button> 
       </div>
-     </div>
+     </div> --> 
      
   </section>
   </main>
@@ -123,3 +131,22 @@
  <script src="./scripts/index.js"></script>
 </body>
 </html>
+
+
+
+
+<!-- POPUP ADD IMAGE-->
+   <div class="popup" id="popup">
+
+    <div class="popupcontainer">
+        <button class="popupclose" id="close-button">
+        <img src="./Images/Close-Icon.svg" alt="Cerrar" class="popupclose-icon">
+       </button>
+      <h4 class="popupadd-img-text">Nuevo Lugar</h4>
+      <form class="popupform">
+        <input type="text" name="name" placeholder="Titulo" class="popupinput">
+        <input type="url" name="about" placeholder="Enlace a la Imagen" class="popup__input">
+
+        <button type="submit" class="popupsubmit">Guardar</button></form>
+
+    </div>
