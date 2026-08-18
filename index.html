@@ -42,6 +42,21 @@
     
     <img src="./Images/Add-Button.png" class="profile__add-button" id="add-button">
   </section>
+
+  <!--POPUP-->
+<div class="popup" id="popup-new-card">
+  <div class="popup__container">
+    <button class="popup__close" id="close-new-card-button" type="button">
+      <img src="./Images/Close-Icon.svg" alt="Cerrar" class="popup__close-icon">
+    </button>
+    <h4 class="popup__text">Nuevo lugar</h4>
+    <form class="popup__form" id="new-card-form">
+      <input type="text" name="place-name" placeholder="Título" class="popup__input" required>
+      <input type="url" name="link" placeholder="Enlace a la imagen" class="popup__input" required>
+      <button type="submit" class="popup__submit">Crear</button>
+    </form>
+  </div>
+</div>
   <!-- POPUP EDITAR PERFIL-->
    <div class="popup" id="popup">
 
@@ -66,62 +81,32 @@
     <h2 class="popup__title"></h2>
     </div>
    </div>
+        <!-- POPUP ADD IMAGE-->
+   <div class="popup" id="add-card-popup">
+
+    <div class="popup__container-add">
+        <button class="popup__close-add" id="close-button-add">
+        <img src="./Images/Close-Icon.svg" alt="Cerrar" class="popup__close-icon">
+       </button>
+      <h4 class="popup__add-img-text">Nuevo Lugar</h4>
+      <form class="popup__form" id="add-card-form">
+        <!--campos del formulario add neew card-->  
+        <input type="text" name="place-name" placeholder="Titulo" class="popup__input">
+        <input type="url" name="link" placeholder="Enlace a la Imagen" class="popup__input">
+
+        <button type="submit" class="popup__submit">Guardar</button></form>
+    </div>
+   </div>
   <section class="elements">
-   <!-- <div class="elements__element"> 
-     <img class="elements__element-image" src="./Images/santafe.webp" alt="Personas relajandose en un parque junto a los edificios">
-      <div class="elements__element-info">
-       <h3 class="elements__element-title">Santa Fe</h3>
-       <button class="elements__element-button elements__element-button_active" type="button">
-        <img src="./Images/Vector-like.svg" alt="Me gusta">
-       </button> 
-      </div>
-     </div>
-          <div class="elements__element"> 
-     <img class="elements__element-image" src="./Images/desierto-de-los-leones.jpg" alt="Ruinas de un exconvento Desierto de los Leones">
-      <div class="elements__element-info">
-       <h3 class="elements__element-title">Cuajimalpa</h3>
-       <button class="elements__element-button" type="button">
-        <img src="./Images/Vector-like.svg" alt="Me gusta">
-       </button> 
-      </div>
-     </div>
-          <div class="elements__element"> 
-     <img class="elements__element-image" src="./Images/marquesa.jpg" alt="Marquesa EdoMex">
-      <div class="elements__element-info">
-       <h3 class="elements__element-title">Marquesa</h3>
-       <button class="elements__element-button" type="button">
-        <img src="./Images/Vector-like.svg" alt="Me gusta">
-       </button> 
-      </div>
-     </div>
-          <div class="elements__element"> 
-     <img class="elements__element-image" src="./Images/tacubaya.jpg" alt="Estacion de metro Tacubaya">
-      <div class="elements__element-info">
-       <h3 class="elements__element-title">Tacubaya</h3>
-       <button class="elements__element-button" type="button">
-        <img src="./Images/Vector-like.svg" alt="Me gusta">
-       </button> 
-      </div>
-     </div>
-          <div class="elements__element"> 
-     <img class="elements__element-image" src="./Images/reformanuevo.jpg" alt="Avenida reforma cdmx">
-      <div class="elements__element-info">
-       <h3 class="elements__element-title">Reforma</h3>
-       <button class="elements__element-button" type="button">
-        <img src="./Images/Vector-like.svg" alt="Me gusta">
-       </button> 
-      </div>
-     </div>
-          <div class="elements__element"> 
-     <img class="elements__element-image" src="./Images/chapu.jpg" alt="Lago Vanois">
-      <div class="elements__element-info">
-       <h3 class="elements__element-title">Chapultepec</h3>
-       <button class="elements__element-button" type="button">
-        <img src="./Images/Vector-like.svg" alt="Me gusta">
-       </button> 
-      </div>
-     </div> --> 
-     
+   <template id="user">
+  <div class="user">
+    <img class="user__avatar" alt="avatar" src="">
+    <div></div>
+    <h3></h3>
+    <button></button>
+    <img src="" alt="">
+  </div>
+</template>
   </section>
   </main>
  <footer class="footer">
@@ -135,18 +120,3 @@
 
 
 
-<!-- POPUP ADD IMAGE-->
-   <div class="popup" id="popup">
-
-    <div class="popupcontainer">
-        <button class="popupclose" id="close-button">
-        <img src="./Images/Close-Icon.svg" alt="Cerrar" class="popupclose-icon">
-       </button>
-      <h4 class="popupadd-img-text">Nuevo Lugar</h4>
-      <form class="popupform">
-        <input type="text" name="name" placeholder="Titulo" class="popupinput">
-        <input type="url" name="about" placeholder="Enlace a la Imagen" class="popup__input">
-
-        <button type="submit" class="popupsubmit">Guardar</button></form>
-
-    </div>
