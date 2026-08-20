@@ -1,9 +1,9 @@
 # Tripleten web_project_around
-# Alrededor de los EE.UU.
+# Alrededor de Mexico city CDMX
 
 ## Descripción del proyecto
 
-"Alrededor de los EE.UU." es una página web interactiva que permite a los usuarios explorar lugares icónicos de Estados Unidos. Los usuarios pueden ver una galería de fotos de diferentes ubicaciones y editar la información de su perfil.
+"Alrededor de los CDMX." es una página web interactiva que permite a los usuarios, sopbre todo foraneos, explorar lugares icónicos de la cdmx, el chilango, el defectuoso, como quieras llamarle. Los usuarios pueden ver una galería de fotos de diferentes ubicaciones y editar la información de su perfil.
 
 ## Funcionalidades
 
@@ -35,7 +35,7 @@ web_project_around/
 [ ] Eliminar tarjetas existentes
 [ ] Validación de formularios
 [ ] Animaciones y transiciones
-
+[ ] Interactuar con otros foraneos que viven en CMDX, compartir fotos, experiencias y recomendaciones.
 ## Autor
 Tu Nombre
 - GitHub: @Mar-jtorres
