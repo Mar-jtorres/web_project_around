@@ -54,10 +54,17 @@ white-space: nowrap;
 
 
 }
+.profile__edit-button:hover{
+   opacity: 0.6;
+}
 .profile__add-button{
     grid-column-start: 4;
     width: 150px;
     justify-self: end;
+    cursor: pointer;
+}
+.profile__add-button:hover{
+   opacity: 0.6;
 }
 
 /* === MEDIA QUERIES === */

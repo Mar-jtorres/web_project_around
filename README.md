@@ -12,7 +12,7 @@
 - **Popup de edición**: Formulario modal para editar la información del perfil
 - **Diseño responsivo**: Adaptable a diferentes tamaños de pantalla (320px - 1280px)
 
-## Tecnologías utilizadas
+## Tecnologías utilizadas:
 
 - **HTML5**: Estructura semántica del contenido
 - **CSS3**: Estilos y diseño responsivo
@@ -37,8 +37,8 @@ web_project_around/
 [ ] Animaciones y transiciones
 [ ] Interactuar con otros foraneos que viven en CMDX, compartir fotos, experiencias y recomendaciones.
 ## Autor
-Tu Nombre
+Maria J Torres 
 - GitHub: @Mar-jtorres
-- LinkedIn: Tu Perfil
+  https://github.com/Mar-jtorres/web_project_around
 
 

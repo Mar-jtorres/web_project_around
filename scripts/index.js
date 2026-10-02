@@ -35,20 +35,43 @@ function createCard(cardData) {
   // Aquí creas todos los elementos de la tarjeta
   const cardElement = document.createElement('div');
   cardElement.classList.add('elements__element');
-  cardElement.innerHTML = 
-  `<button class="elements__element-button-delete" type="button"> <img src="../Images/v_thrash.svg" alt="Delete">
-   </button>
-  <img class="elements__element-image" src="${cardData.link}" alt="${cardData.name}">
-  <div class="elements__element-info">
-    <h3 class="elements__element-title">${cardData.name}</h3>
-    <button class="elements__element-button" type="button">
-      <img src="../Images/Vector-like.svg" alt="Me gusta">
-    </button> 
-  </div>`;
-  const likeButton = cardElement.querySelector(".elements__element-button");
+  
+
+  const buttonDelete = document.createElement("button");
+  const thrashIcon = document.createElement("img");
+  thrashIcon.src = "../Images/v_thrash.svg";
+  buttonDelete.append(thrashIcon);
+  buttonDelete.classList.add("elements__element-button-delete");
+  buttonDelete.addEventListener('click', function() {
+  cardElement.remove();
+  }); 
+
+  const image = document.createElement("img");
+  image.classList.add("elements__element-image");
+  image.src = cardData.link;
+  image.alt = cardData.name;
+  image.addEventListener('click',function(){
+  const popupImage = document.querySelector('.popup__image');
+  popupImage.src = image.src
+  const popupTitle = document.querySelector('.popup__title');
+  popupTitle.textContent = title.textContent;
+  const popupWithImage = document.querySelector('.popup_type_image'); 
+  popupWithImage.classList.add('popup__opened');
+  });
+   
+
+  const title = document.createElement("h3");
+  title.classList.add("elements__element-title");
+  title.textContent = cardData.name;
+  
+  
+  const likeButton = document.createElement("button");
+  const heartIcon = document.createElement("img");
+  heartIcon.src = "../Images/Vector-like.svg";
+  likeButton.append(heartIcon);
+  likeButton.classList.add("elements__element-button");
   likeButton.addEventListener("click", function() {
   likeButton.classList.toggle("elements__element-button_active");
- 
   //LIKE  HEART
   const heartImage = likeButton.querySelector('img'); // Encuentra la imagen del corazón
   // Aquí cambiarás el src, logica de comparacion
@@ -59,36 +82,18 @@ function createCard(cardData) {
    // El corazón está vacío, cámbialo a lleno
   heartImage.src = "../Images/heart_full.svg";
    }
-  
-  // Make deleteButton work
-  const deleteButton = cardElement.querySelector(".elements__element-button-delete");
-  deleteButton.addEventListener('click', function() {
-  cardElement.remove();
-  }); 
-   }); 
-  
- 
-// para que las tarjetas recien agregadas a la gallery se abran como popup
-const justAddCard = cardElement.querySelector(".elements__element-image") 
-justAddCard.addEventListener('click', function(event) {
-
-const popupImage = document.querySelector('.popup__image'); 
-popupImage.src = event.target.src;
-
-const card = event.target.closest('.elements__element');
-const cardTitle = card.querySelector('.elements__element-title').textContent;
-
-const popupTitle = document.querySelector('.popup__title');
-popupTitle.textContent = cardTitle;
-
-const popupWithImage = document.querySelector('.popup_type_image'); 
-popupWithImage.classList.add('popup__opened');
-});
-
-  // Al final, DEBES devolver el elemento creado
+  });
+  const cardInfo = document.createElement("div");
+  cardInfo.classList.add("elements__element-info");
+  cardInfo.append(title, likeButton);
+  cardElement.append(image, cardInfo, buttonDelete);
   return cardElement;
-  
-}
+  }
+
+   
+
+
+
 
 // Función para renderizar las tarjetas iniciales
 function renderizarTarjetasIniciales() {
@@ -151,29 +156,12 @@ function handleProfileFormSubmit(evt){
         closePopup();
        }
        
-const cardImages = document.querySelectorAll(".elements__element-image");
+
 // EVENT LISTENERS
 editButton.addEventListener('click', openPopup); // hacer que popup se abra al dar click en boton editar
 closeButton.addEventListener('click', closePopup); // hacer que se cierre al dar click en boton cerrar
 formElement.addEventListener('submit', handleProfileFormSubmit); // hacer que se encargue de los datos al dar submit
 
-// trabajando en las ventanas emergentes: 
-cardImages.forEach((imagen) => {
-  imagen.addEventListener ('click', (evt) => {
-      const imagenSrc = evt.target.src;
-      const imagenAlt = evt.target.alt;
-// seleccionar elementos popup de la galeria
-    const popupImagen = document.querySelector('.popup_type_image');
-    const popupImageElement = popupImagen.querySelector('.popup__image');
-    const popupTitle = popupImagen.querySelector('.popup__title');
-// asignar los datos de la imagen clickeada
-    popupImageElement.src = imagenSrc;
-    popupImageElement.alt = imagenAlt;
-    popupTitle.textContent = imagenAlt;
-// abrir el popup con la clase CSS antes creada, la reusamos
-    popupImagen.classList.add('popup__opened');
-  });
-});
 
 // boton cerrar de popup galeria
 const closeButtonImg = document.querySelector('.popup__close-button');

@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang ="es">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
@@ -27,36 +28,23 @@
     
  <header class="header">
     <!-- Logo/título -->
-<img class="header__title" src="./Images/Around.png">
-<img class="header__line" src="./Images/Line.png">
+<img class="header__title" src="./Images/Around.png" alt="Logotipo de Around CDMX">
+<img class="header__line" src="./Images/Line.png" alt="imagen">
   </header>
   <main class="content">
     <!-- Sección de perfil y galería -->
   <section class="profile">
-    <img src="./Images/profile-maria.jpeg" class="profile__pic">
+    <img src="./Images/profile-maria.jpeg" class="profile__pic" alt="Foto de perfil">
     <div class="profile__name">
     <h2 class="profile__info">Maria Torres</h2>
-    <img src="./Images/Edit-Button.png" class="profile__edit-button" id="edit-button">
+    <img src="./Images/Edit-Button.png" class="profile__edit-button" id="edit-button" alt="Editar perfil">
     </div>
     <p class="profile__sub">Developer, Ethical Hacker</p>
     
-    <img src="./Images/Add-Button.png" class="profile__add-button" id="add-button">
+    <img src="./Images/Add-Button.png" class="profile__add-button" id="add-button" alt="Agregar tarjeta">
   </section>
 
-  <!--POPUP-->
-<div class="popup" id="popup-new-card">
-  <div class="popup__container">
-    <button class="popup__close" id="close-new-card-button" type="button">
-      <img src="./Images/Close-Icon.svg" alt="Cerrar" class="popup__close-icon">
-    </button>
-    <h4 class="popup__text">Nuevo lugar</h4>
-    <form class="popup__form" id="new-card-form">
-      <input type="text" name="place-name" placeholder="Título" class="popup__input" required>
-      <input type="url" name="link" placeholder="Enlace a la imagen" class="popup__input" required>
-      <button type="submit" class="popup__submit">Crear</button>
-    </form>
-  </div>
-</div>
+
   <!-- POPUP EDITAR PERFIL-->
    <div class="popup" id="popup">
 
