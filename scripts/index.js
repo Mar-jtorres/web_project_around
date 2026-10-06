@@ -39,7 +39,7 @@ function createCard(cardData) {
 
   const buttonDelete = document.createElement("button");
   const thrashIcon = document.createElement("img");
-  thrashIcon.src = "../Images/v_thrash.svg";
+  thrashIcon.src = "./Images/v_thrash.svg";
   buttonDelete.append(thrashIcon);
   buttonDelete.classList.add("elements__element-button-delete");
   buttonDelete.addEventListener('click', function() {
@@ -67,21 +67,12 @@ function createCard(cardData) {
   
   const likeButton = document.createElement("button");
   const heartIcon = document.createElement("img");
-  heartIcon.src = "../Images/Vector-like.svg";
+  heartIcon.src = "./Images/Vector-like.svg";
   likeButton.append(heartIcon);
   likeButton.classList.add("elements__element-button");
   likeButton.addEventListener("click", function() {
   likeButton.classList.toggle("elements__element-button_active");
-  //LIKE  HEART
-  const heartImage = likeButton.querySelector('img'); // Encuentra la imagen del corazón
-  // Aquí cambiarás el src, logica de comparacion
-  if (heartImage.src.includes("heart_full.svg")) {
-  // El corazón está está lleno, cámbialo a vacío
-  heartImage.src = "../Images/Vector-like.svg";
-} else {
-   // El corazón está vacío, cámbialo a lleno
-  heartImage.src = "../Images/heart_full.svg";
-   }
+  
   });
   const cardInfo = document.createElement("div");
   cardInfo.classList.add("elements__element-info");
@@ -140,14 +131,14 @@ const formElement = document.querySelector('.popup__form');
 function handleProfileFormSubmit(evt){
         evt.preventDefault ();
         // Donde va a escribir el user su info:
-        let nameInput = document.querySelector('.popup__input');
-        let jobInput = document.querySelector('.popup__textarea');
+        const nameInput = document.querySelector('.popup__input');
+        const jobInput = document.querySelector('.popup__textarea');
         // crear dos variables que tomen lo que el user escriba 
-        let nameValue = nameInput.value;
-        let jobValue = jobInput.value;
+        const nameValue = nameInput.value;
+        const jobValue = jobInput.value;
         // Donde debe mostrarse lo que el user escribio
-        let profileName = document.querySelector('.profile__info');
-        let profileJob = document.querySelector('.profile__sub');
+        const profileName = document.querySelector('.profile__info');
+        const profileJob = document.querySelector('.profile__sub');
         // Haz que el contenido que el user escriba se vea donde indicaste arriba 
         // usamos textContext para insertar nuevos valores
         profileName.textContent = nameValue;
@@ -170,7 +161,6 @@ const popUpGallery = document.querySelector('#popup_type_image');
 
 // LLAMAR UNA FUNCION ESPECIFICA PARA cerrar POPUP DE LA GALERIA abrir imagen
 function closePopupGallery() {
-    console.log("Función cerrar-abrir imagen ejecutada");
     popUpGallery.classList.remove('popup__opened');
 }
 closeButtonImg.addEventListener('click', closePopupGallery);
@@ -195,12 +185,11 @@ const closeButtonAdd = document.querySelector('.popup__close-add');
 const popUpAddGallery = document.querySelector('#add-card-popup');
 
 function closePopupAddImg() {
-    console.log("Función cerrar-abrir popup imagen agregada");
     popUpAddGallery.classList.remove('popup__opened');
 }
 
 closeButtonAdd.addEventListener('click', closePopupAddImg);
-console.log("Event listener asignado"); // Línea temporal
+
 
 //FUNCION PARA AGREGAR IMG NUEVAS, seleccionando elformulario add card form
 const addCardForm = document.getElementById('add-card-form');
