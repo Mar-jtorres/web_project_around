@@ -36,8 +36,11 @@
     border: none;
     cursor: pointer;
 }
-.elements__element-button_active {
-  /* estilos para cuando está "liked" */
+.elements__element-button_active img {
+  content: url("../Images/heart_full.svg");
+}
+.elements__element-button:hover{
+    opacity: 0.6;
 }
 .elements__element-button-delete{
     position: absolute;
@@ -53,6 +56,28 @@
     opacity: 0.6;
 }
 /* === MEDIA QUERIES === */
+
+
+@media screen and (min-width: 768px){
+   .elements{
+    display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(2, auto);
+  gap: 10px;
+  align-items: center;
+   }
+   
+   .elements__element{
+    width: 250px;
+
+   }
+   
+    .elements__element-image {
+  height: 278px;
+  width: 250px;
+   }
+}
+
 @media screen and (max-width: 320px){
     .elements{
         display: grid;
@@ -61,6 +86,6 @@
         padding-left: 20px;
     }
     .elements__element {
-        object-fit: cover;
+        
     }
 }
