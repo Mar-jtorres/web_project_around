@@ -20,7 +20,8 @@
 - **Metodología BEM**: Organización y nomenclatura de CSS
 - **Figma**: Diseño y prototipado
 
-## Estructura del proyecto
+## Estructura del proyecto0.
+
 
 web_project_around/
 ├── blocks/           # Archivos CSS organizados por bloques BEM
@@ -30,9 +31,7 @@ web_project_around/
 ├── index.html        # Página principal
 
 ## Próximas mejoras
-[ ] Funcionalidad de "me gusta" en las tarjetas
-[ ] Agregar nuevas tarjetas dinámicamente
-[ ] Eliminar tarjetas existentes
+
 [ ] Validación de formularios
 [ ] Animaciones y transiciones
 [ ] Interactuar con otros foraneos que viven en CMDX, compartir fotos, experiencias y recomendaciones.
@@ -40,5 +39,7 @@ web_project_around/
 Maria J Torres 
 - GitHub: @Mar-jtorres
   https://github.com/Mar-jtorres/web_project_around
+
+  https://mar-jtorres.github.io/web_project_around/
 
 
